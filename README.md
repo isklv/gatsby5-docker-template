@@ -13,9 +13,9 @@
 
    Build docker image
 
-    ```shell
-    docker build -f Dockerfile.dev -t gatsby:5 .
-    ```
+   ```shell
+   docker build -f Dockerfile.dev -t gatsby:5 .
+   ```
     
 2. **Run container (mount only src directory)**
 
