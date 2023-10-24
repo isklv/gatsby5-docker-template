@@ -16,19 +16,20 @@
     ```shell
     docker build -f Dockerfile.dev -t gatsby:5 .
     ```
-2. Run container (mount only src directory)
+    
+2. **Run container (mount only src directory)**
 
-   ```shell
-    docker run -d \
-  		-it \
-  		-p 8000:8000 \
-  		--name gatsby-dev \
-  		--mount type=bind,source="$(pwd -W)"/src,target=/app/gatsby/src \
-  		gatsby:5
-   ```
+ ```shell
+  docker run -d \
+    -it \
+    -p 8000:8000 \
+    --name gatsby-dev \
+    --mount type=bind,source="$(pwd -W)"/src,target=/app/gatsby/src \
+    gatsby:5
+ ```
 
 3.  **Open the code and start customizing!**
 
-    Your site is now running at http://localhost:8000!
+  Your site is now running at http://localhost:8000!
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+  Edit `src/pages/index.tsx` to see your site update in real-time!
